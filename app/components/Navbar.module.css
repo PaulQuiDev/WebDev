@@ -1,0 +1,76 @@
+/* components/Navbar.module.css */
+/* Navbar */
+.navbar {
+  background-color: #230C0F;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0;
+}
+
+/* Lien de la navbar */
+.link, .downloadButton {
+  color: #FFFFF3;
+  text-decoration: none;
+  font-size: 1.1rem; /* Taille adaptative */
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+/* Changement de couleur au survol */
+.link:hover {
+  color: #f0a500;
+}
+
+.downloadButton:hover {
+  color: #335ace;
+}
+
+/* Lien actif */
+.active {
+  color: #F5E4D7; /* Couleur pour indiquer l'élément actif */
+  font-weight: bold; /* Met en évidence le lien */
+  border-bottom: 2px solid #F5E4D7; /* Ajoute un soulignement */
+}
+
+/* Lien actif au survol */
+.active:hover {
+  color: #f5c542; /* Couleur légèrement différente au survol */
+  border-bottom: 2px solid #f5c542; /* Change la couleur du soulignement au survol */
+}
+
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Arrange les liens en colonne sur petits écrans */
+    align-items: center;
+  }
+
+  .link, .downloadButton {
+    font-size: 1rem; /* Réduit la taille de la police */
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 8px;
+  }
+
+  .link, .downloadButton {
+    font-size: 0.9rem; /* Taille de police encore plus petite pour les très petits écrans */
+    padding: 6px;
+  }
+}

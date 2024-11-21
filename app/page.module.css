@@ -1,0 +1,129 @@
+/* Projet1.module.css */
+
+.page {
+  font-family: Arial, sans-serif;
+  padding: 2.5%;
+  background-color: #F5E4D7;
+}
+
+/* Conteneur principal */
+.container {
+  display: flex;
+  flex-direction: column; /* Par défaut, les éléments s'empilent en colonne pour écrans étroits */
+  align-items: center; /* Centrer les éléments pour petits écrans */
+  margin-top: 35px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  padding: 20px;
+  background-color: #FFFFF3;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 80px;
+  left: 20px;
+  z-index: 999;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  color: #230C0F;
+  margin-bottom: 15px;
+  margin-top: 7px;
+}
+
+.sidebar p, .sidebar ul {
+  font-size: 1rem;
+  color: #1B4965;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Contenu principal */
+.mainContent {
+  margin-left: 300px;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #FFFFF3; /* bg zone texte cv */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section */
+.section {
+  margin-bottom: 30px;
+}
+
+/* Image de profil */
+.profileImage {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.title{
+  color: #AF5D63;
+  font-size: 2rem;
+}
+
+.miniTitle{
+  color:  #230C0F;
+}
+
+/* Media queries */
+@media (max-width: 1024px) {
+  .sidebar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; /* La sidebar prend toute la largeur */
+    margin-bottom: 20px;
+    
+  }
+  .container{
+    margin-top: 50px;
+  }
+  .mainContent {
+    margin-left: 0; /* Supprime le décalage laissé par la sidebar */
+    max-width: 100%; /* Contenu principal en pleine largeur */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Empile sidebar et contenu principal */
+    align-items: center;
+    margin-top: 100px;
+  }
+
+  .sidebar {
+    width: 90%; /* Réduit la largeur de la sidebar pour petits écrans */
+  }
+
+  .mainContent {
+    padding: 15px; /* Réduit le padding pour un affichage compact */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar h2 {
+    font-size: 1.2rem; /* Taille de police réduite pour petits écrans */
+  }
+
+  .sidebar p, .sidebar ul {
+    font-size: 0.9rem; /* Taille de police réduite pour petits écrans */
+  }
+
+  .mainContent {
+    padding: 10px; /* Réduit encore le padding pour optimiser l'espace */
+  }
+}

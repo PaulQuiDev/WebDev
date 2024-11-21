@@ -1,0 +1,66 @@
+.projectBubble {
+  display: flex;
+  width: 100%;
+  max-width: 1400px; /* Largeur maximale */
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(54, 138, 187, 0.2);
+  overflow: hidden;
+}
+
+.imageContainer {
+  flex: 1;
+  min-width: 50%; /* Espace dédié aux images */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projectImage {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.projectTitle {
+  margin-top: 1px;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.detailsSummary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #F5E4D7;/*bg du porte folio */
+  border-radius: 10px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #AF5D63;/*les tire */
+  margin-bottom: 10px;
+}
+
+.projectBubble {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    margin-top: 10%;
+  }
+
+}
