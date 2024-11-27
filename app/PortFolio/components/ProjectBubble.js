@@ -30,7 +30,7 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
 
   useEffect(() => {
     if (validMedia.length > 0) {
-      const getRandomInterval = () => Math.random() * 3000 + 3000; // Random interval between 3 and 6 seconds
+      const getRandomInterval = () => Math.random() * 3000 + 2000; // Random interval between 3 and 6 seconds
 
       const timeout = setTimeout(() => {
         setCurrentMediaIndex((prevIndex) =>
@@ -46,7 +46,7 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
     return (
       <div className={styles.projectBubble}>
         <div className={styles.mediaContainer}>
-          <p className={styles.errorMessage}>Aucun média disponible pour ce projet.</p>
+          <p className={styles.errorMessage}>Média non-disponible recharger la page SVP.</p>
         </div>
         <div className={styles.content}>
           <h3 className={styles.projectTitle}>{title}</h3>
