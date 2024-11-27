@@ -46,7 +46,7 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
     return (
       <div className={styles.projectBubble}>
         <div className={styles.mediaContainer}>
-          <p className={styles.errorMessage}>Média non-disponible recharger la page SVP.</p>
+          <p className={styles.errorMessage}>Chargement des média, recharger la page sinon.</p>
         </div>
         <div className={styles.content}>
           <h3 className={styles.projectTitle}>{title}</h3>

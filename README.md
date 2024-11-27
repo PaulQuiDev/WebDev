@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - CV en HTML Basique
 
-## Getting Started
+## Contexte du Projet
+Dans le cadre d'un projet scolaire, j'ai réalisé un CV portfolio en HTML basique pour me présenter et exposer mes projets. Ce portfolio a été conçu de manière évolutive afin de pouvoir facilement y intégrer de futurs projets.
 
-First, run the development server:
+## Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Composant Navbar
+- Une barre de navigation facilitant l'accès aux différentes sections de mon portfolio.
+- Permet de télécharger directement une version PDF de mon CV.
+
+### Module ProjectBubble
+Pour simplifier l'ajout et la présentation de mes projets, j'ai développé un module nommé **ProjectBubble**. Ce composant fonctionne de la manière suivante :
+
+```jsx
+<ProjectBubble
+  title="Titre du projet"
+  summary="Résumé du projet"
+  details="Description détaillée du projet"
+  skills={["Compétence 1", "Compétence 2"]}
+  links={[{ label: "Projet GitHub", url: "https://github.com/PaulQuiDev/gcodeToIselCPM" },]}
+  images={["/images/image1.jpeg", "/images/image2.jpeg"]}
+/>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Fonctionnalités du module :
+- Présentation des projets avec un titre, un résumé, des détails, une liste de compétences utilisées, des liens associés et des médias (images/vidéos).
+- **Bouton "Plus de détails"** : Permet d'afficher des informations supplémentaires pour chaque projet.
+- **Défilement des médias** :
+  - Durée minimale de 2 secondes par média.
+  - Ajout d'un délai aléatoire (entre 1 et 3 secondes) pour désynchroniser le défilement des médias.
+  - Détection automatique de l'absence de médias pour éviter tout crash.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Responsive Design
+Le portfolio a été testé et adapté pour :
+- **Ordinateurs** : Placement optimisé des éléments.
+- **Mobiles** : Réduction des besoins en scrolling grâce à l'organisation en bulles de projet avec détails repliables.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Limitations
+- **Temps de chargement des médias** : L'utilisation de l'hébergeur gratuit Vercel rallonge le chargement des images (3 à 5 secondes contre 0,07 seconde en local).
 
-## Learn More
+## Hébergement
+Le portfolio est hébergé gratuitement sur **Vercel**, offrant une accessibilité en ligne facile tout en permettant des ajustements futurs.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ce projet est une base solide que je compte enrichir avec mes prochaines réalisations. N'hésitez pas à parcourir mes projets et à me contacter pour toute question ou collaboration !
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
