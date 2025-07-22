@@ -8,6 +8,60 @@ export default function PortFolio() {
       <Navbar />
       <h1 className={styles.title}>Mon Portfolio</h1>
 
+      {/* Deuxième partie : Projets réalisés dans le cadre professionnel */}
+      <section className={styles.section}>
+        <h2 className={styles.sectionTitle}>Projets réalisés dans le cadre professionnel</h2>
+
+        <ProjectBubble
+          title="Système multi-IA pour maintenance 4.0"
+          summary="Stage de fin d’études de 6 mois au sein de la Direction Innovation chez Alten, axé sur le développement d’un système multi-IA pour la maintenance prescriptive dans une mini-usine 4.0."
+          details="J’ai participé à la création d’un système multi-IA capable de prédire les pannes dans un environnement industriel simulé. Après une phase d’étude rapide pour identifier les modèles les plus adaptés, j’ai conçu des architectures IA sous TensorFlow, traité les signaux et les données, puis entraîné et validé les modèles. J’ai également encadré une petite équipe, en assurant la répartition des tâches et le suivi via Azure DevOps, dans un cadre agile."
+          skills={[
+            "IA appliquée à l'industrie",
+            "TensorFlow",
+            "Traitement de signal et données",
+            "Méthode Agile (Azure DevOps)",
+            "Encadrement technique"
+          ]}
+          links={[]}
+          images={["/images/At.jpeg","/images/At1.jpeg","/images/At2.jpeg"]}
+        />
+
+
+        <ProjectBubble
+          title="Simplification et amélioration d'une CNC"
+          summary="Stage de 4 mois au sein de la DSI, axé sur la simplification de l'utilisation d'une CNC avec un code propriétaire et l'amélioration de ses capacités."
+          details="Lors de ce stage, ma mission principale a été de rendre une CNC utilisant un code de contrôle propriétaire compatible avec le G-code standard. J'ai développé une application Python, utilisant Tkinter, compatible avec Linux et Windows, pour simplifier son usage. J'ai également amélioré la machine en augmentant sa taille de découpe et en ajoutant une fonctionnalité de découpe laser. En parallèle, j'ai participé à l'entretien d'une machine de découpe de verre, notamment en identifiant et résolvant une panne."
+          skills={[
+            "Développement Python",
+            "Compatibilité multi-plateforme", 
+            "Maintenance industrielle",
+            "Amélioration de CNC"
+          ]}
+          links={[
+            { label: "Projet GitHub", url: "https://github.com/PaulQuiDev/gcodeToIselCPM" },
+          ]}
+          images={["/images/Aff3.jpeg", "/images/Aff2.jpeg" , "/images/Aff.mp4" , "/images/Aff.jpeg" , "/images/Aff2.mp4" , "/images/Aff3.mp4" , "/images/Aff1.jpeg" ]}
+        />
+
+          <ProjectBubble
+            title="Campagne de financement et création de dessous de verre modulables"
+            summary="Création d'une campagne de financement express pour concevoir des dessous de verre modulables à partir de chutes de cuir issues de l'industrie du luxe."
+            details="En équipe de quatre, nous avons mené une campagne de financement express inspirée de Kickstarter sur un mois. Le projet consistait à concevoir des dessous de verre emboîtables, pouvant se transformer en chemins de table ou dessous de plats. Nous avons prototypé pour trouver la forme idéale, fabriqué un emporte-pièce, acheté et découpé le cuir, et réalisé un fer de marquage à chaud pour personnaliser les produits. Nous avons également mené une campagne de communication efficace. Le projet a été un succès, générant des bénéfices et validant notre concept."
+            skills={[
+              "Gestion de projet",
+              "Prototypage produit",
+              "Travail du cuir",
+              "Marketing et communication",
+              "Organisation de campagne de financement"
+            ]}
+            links={[]} // Tu pourras ajouter tes liens ici
+            images={["/images/kik.jpeg","/images/kik1.jpeg","/images/kik2.jpeg","/images/kik3.jpeg","/images/kik4.jpeg","/images/kik5.jpeg","/images/kik6.jpeg","/images/kik7.jpeg","/images/kik8.mp4","/images/kik9.jpeg","/images/kik10.jpeg","/images/kik11.jpeg","/images/kik12.mp4","/images/kik13.jpeg","/images/kik.jpeg14","/images/kik.jpeg15","/images/kik16.mp4","/images/kik17.jpeg","/images/kik18.jpeg","/images/kik19.jpeg","/images/kik20.jpeg"]} // Tu pourras ajouter tes images ici
+          />
+        
+      </section>
+
+
       {/* Première partie : Projets réalisés dans le cadre scolaire */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Projets réalisés dans le cadre scolaire</h2>
@@ -52,62 +106,31 @@ export default function PortFolio() {
 
       </section>
 
-      {/* Deuxième partie : Projets réalisés dans le cadre professionnel */}
-      <section className={styles.section}>
-        <h2 className={styles.sectionTitle}>Projets réalisés dans le cadre professionnel</h2>
-        <ProjectBubble
-          title="Simplification et amélioration d'une CNC"
-          summary="Stage de 4 mois au sein de la DSI, axé sur la simplification de l'utilisation d'une CNC avec un code propriétaire et l'amélioration de ses capacités."
-          details="Lors de ce stage, ma mission principale a été de rendre une CNC utilisant un code de contrôle propriétaire compatible avec le G-code standard. J'ai développé une application Python, utilisant Tkinter, compatible avec Linux et Windows, pour simplifier son usage. J'ai également amélioré la machine en augmentant sa taille de découpe et en ajoutant une fonctionnalité de découpe laser. En parallèle, j'ai participé à l'entretien d'une machine de découpe de verre, notamment en identifiant et résolvant une panne."
-          skills={[
-            "Développement Python",
-            "Compatibilité multi-plateforme",
-            "Maintenance industrielle",
-            "Amélioration de CNC"
-          ]}
-          links={[
-            { label: "Projet GitHub", url: "https://github.com/PaulQuiDev/gcodeToIselCPM" },
-          ]}
-          images={["/images/Aff3.jpeg", "/images/Aff2.jpeg" , "/images/Aff.mp4" , "/images/Aff.jpeg" , "/images/Aff2.mp4" , "/images/Aff3.mp4" , "/images/Aff1.jpeg" ]}
-        />
-
-          <ProjectBubble
-            title="Campagne de financement et création de dessous de verre modulables"
-            summary="Création d'une campagne de financement express pour concevoir des dessous de verre modulables à partir de chutes de cuir issues de l'industrie du luxe."
-            details="En équipe de quatre, nous avons mené une campagne de financement express inspirée de Kickstarter sur un mois. Le projet consistait à concevoir des dessous de verre emboîtables, pouvant se transformer en chemins de table ou dessous de plats. Nous avons prototypé pour trouver la forme idéale, fabriqué un emporte-pièce, acheté et découpé le cuir, et réalisé un fer de marquage à chaud pour personnaliser les produits. Nous avons également mené une campagne de communication efficace. Le projet a été un succès, générant des bénéfices et validant notre concept."
-            skills={[
-              "Gestion de projet",
-              "Prototypage produit",
-              "Travail du cuir",
-              "Marketing et communication",
-              "Organisation de campagne de financement"
-            ]}
-            links={[]} // Tu pourras ajouter tes liens ici
-            images={["/images/kik.jpeg","/images/kik1.jpeg","/images/kik2.jpeg","/images/kik3.jpeg","/images/kik4.jpeg","/images/kik5.jpeg","/images/kik6.jpeg","/images/kik7.jpeg","/images/kik8.mp4","/images/kik9.jpeg","/images/kik10.jpeg","/images/kik11.jpeg","/images/kik12.mp4","/images/kik13.jpeg","/images/kik.jpeg14","/images/kik.jpeg15","/images/kik16.mp4","/images/kik17.jpeg","/images/kik18.jpeg","/images/kik19.jpeg","/images/kik20.jpeg"]} // Tu pourras ajouter tes images ici
-          />
-
-
-        
-      </section>
 
       {/* Troisième partie : Projets personnels */}
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Projets personnels</h2>
         
         <ProjectBubble
-          title="Expérimentations avec l'IA générative"
-          summary="Installation, utilisation de modèles d'IA générative pour le texte, les images et les vidéos"
-          details="Dans ce projet, j'ai exploré les modèles d'IA générative, notamment pour la création d'images et de vidéos à partir de modèles comme A1111 et ComfyUI. J'ai étudié les paramètres de génération, optimisé leur configuration et implémenté des modèles de langage (LLM) en local. J'ai également modifié les paramètres des requêtes API pour définir des options par défaut adaptées à mes besoins. Afin d'exploiter de plus grands modèles et expérimenter des solutions open source à la pointe de la technologie, j'ai construit un PC sur mesure avec des performances optimisées."
+          title="Expérimentations d'IA générative en local"
+          summary="Installation et utilisation de modèles d'IA générative open source pour le texte, les images et les vidéos"
+          details="Dans ce projet, j’ai exploré des modèles d’IA générative exécutés en local, notamment pour la création d’images et de vidéos à l’aide de solutions comme A1111, ComfyUI et FramePack. Une veille active sur les modèles open source m’a permis d’identifier les outils les plus pertinents. J’ai configuré et optimisé leurs paramètres de génération, modifié les requêtes API pour des options par défaut personnalisées, et expérimenté l’exécution locale de LLM. Pour exploiter ces technologies de manière fluide, j’ai assemblé un PC sur mesure orienté IA."
           skills={[
-            "Installation et configuration de modèles IA",
+            "Installation de modèles IA en local",
+            "Veille open source",
             "Optimisation des paramètres API",
             "Génération d'images et vidéos",
             "Implémentation locale de LLM",
             "Assemblage de matériel informatique"
           ]}
-          links={[{ label: "GitHub A1111", url: "https://github.com/AUTOMATIC1111/stable-diffusion-webui" },{ label: "GitHub ComfyUI", url: "https://github.com/comfyanonymous/ComfyUI" },]}  
-          images={["/images/Defforum.mp4", "/images/IA.jpeg", "/images/IA.mp4","/images/IA1.jpeg"]}
+          links={[
+            { label: "GitHub A1111", url: "https://github.com/AUTOMATIC1111/stable-diffusion-webui" },
+            { label: "GitHub ComfyUI", url: "https://github.com/comfyanonymous/ComfyUI" },
+            { label: "Github FramePack" , url:"https://github.com/lllyasviel/FramePack"}
+          ]}
+          images={["/images/Defforum.mp4", "/images/IA.jpeg", "/images/IA.mp4", "/images/IA1.jpeg", "/images/IA2.mp4", "/images/IA3.mp4", "/images/PC.jpeg" , "/images/PC1.jpeg"]}
         />
+
 
         <ProjectBubble
           title="Optimisation d'une imprimante 3D FDM"

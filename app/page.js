@@ -57,8 +57,13 @@ export default function Home() {
         <section className={styles.section}>
           <h1 className={styles.title}>Paul Raguet </h1>
           <p className={styles.subTitle}>
-            Étudiant en 5e année à l'ESILV, je recherche un stage de 6 mois à partir de février 2025,
-            dans les domaines de la robotique, de l'électronique et de l'IA.
+            Bientôt diplômé de&nbsp;
+            <a href="https://www.esilv.fr/" target="_blank" rel="noopener noreferrer">
+              l’ESILV
+            </a>
+            , promotion 2025, je recherche dès octobre un poste
+            d’ingénieur orienté développement et intégration de solutions technologiques. Mes
+            domaines de prédilection sont l’intelligence artificielle, la robotique et l’électronique.
           </p>
         </section>
 
@@ -109,6 +114,14 @@ export default function Home() {
             </p>
             <i>Compétences : Docker, Python, API, debug et optimisation.</i>
           </div>
+
+          <div className={styles.project}>
+            <h3 className={styles.miniTitle}><br/>Construction d’un PC pour l’IA</h3>
+            <p>
+              Recherche et sélection des meilleurs composants pour le rapport performance/prix, puis montage d’un PC dédié à l’IA. Accès à distance via NoMachine.
+            </p>
+            <i>Compétences : hardware, optimisation, accès distant, veille technologique.</i>
+          </div>
         </section>
 
         <hr className={styles.divider} />
@@ -117,7 +130,14 @@ export default function Home() {
           <section className={styles.section}>
             <h2 className={styles.heading}>Parcours Professionnel</h2>
             <p>
-              <strong className={styles.miniTitle}>2024 - Stage de 4 mois à la DSI (Direction des Systèmes d'Information) chez Afflelou</strong><br />
+              <strong className={styles.miniTitle}>2025 – Stage de fin d’études de 6 mois chez Alten (Direction Innovation)</strong><br />
+              - Développement d’un système multi-IA pour la maintenance prescriptive sur une mini-usine 4.0.<br />
+              - Conception des architectures IA (TensorFlow), traitement des données, entraînement et tests.<br />
+              - Démonstration fonctionnelle du système pour valider sa pertinence.<br />
+              - Encadrement d’une petite équipe : répartition des tâches et suivi technique.
+            </p>
+            <p>
+              <strong className={styles.miniTitle}><br/>2024 - Stage de 4 mois à la DSI (Direction des Systèmes d'Information) chez Afflelou</strong><br />
               - Développement d'une application en Python pour rendre une machine CNC compatible avec le gcode.<br />
               - Diagnostic et réparation d'une machine de découpe, incluant l'identification des pièces défectueuses et leur remplacement.
             </p>
