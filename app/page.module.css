@@ -79,6 +79,86 @@
   color:  #230C0F;
 }
 
+/* ===== Expériences (Parcours professionnel enrichi) ===== */
+.experience {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border-left: 4px solid #AF5D63;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.06);
+}
+.expTitle {
+  display: block;
+  font-size: 1.1rem;
+  color: #230C0F;
+  margin-bottom: 3px;
+}
+.expMeta {
+  font-size: 0.9rem;
+  color: #7F6B61;
+  margin: 0 0 6px 0;
+}
+.expMission {
+  font-size: 0.95rem;
+  color: #1B4965;
+  margin: 0 0 6px 0;
+}
+.experience ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 6px 0;
+}
+.experience li {
+  font-size: 0.95rem;
+  color: #230C0F;
+  line-height: 1.5;
+  padding-left: 18px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.experience li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #AF5D63;
+}
+.expSub {
+  font-size: 0.9rem;
+  color: #1B4965;
+  line-height: 1.5;
+  margin: 0 0 6px 0;
+}
+.expTech {
+  font-size: 0.86rem;
+  font-style: italic;
+  color: #230C0F;
+  margin: 8px 0 0 0;
+}
+
+.heading {
+  color: #AF5D63;
+  font-size: 1.35rem;
+  margin: 0 0 12px 0;
+}
+.subTitle {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #230C0F;
+}
+.divider {
+  border: none;
+  border-top: 1px solid #AF5D63;
+  margin: 24px 0;
+}
+.project {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
+}
+
 /* Media queries */
 @media (max-width: 1024px) {
   .sidebar {

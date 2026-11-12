@@ -43,13 +43,12 @@ export default function Home() {
           
           <h2>SKILLS</h2>
           <ul>  
-            <li>Impression 3D (FDM SLA)</li>
-            <li>Maitrise de l’anglais</li>
-            <li>Pack Office</li>
-            <li>Programmation: C,C#,Python</li>
-            <li>Permis de conduire B</li>
-            <li>Permis bateau (côtier)</li>
-            <li>Linux</li>
+            <li><strong>IA :</strong> TensorFlow, CNN/RNN, LLM open-source, IA générative locale, traitement du signal</li>
+            <li><strong>Programmation :</strong> Python, C++, C#</li>
+            <li><strong>Systèmes :</strong> Linux (Debian), Docker, Profinet, TCP/IP, SSH</li>
+            <li><strong>Industrie :</strong> OPC UA, InfluxDB, maintenance industrielle</li>
+            <li><strong>Hardware :</strong> PCB (ESP32, KiCad), IoT (ESP-NOW), Impression 3D</li>
+            <li><strong>Outils :</strong> Git, Azure DevOps</li>
           </ul>
         </div>
         <div className={styles.mainContent}>
@@ -57,20 +56,14 @@ export default function Home() {
         <section className={styles.section}>
           <h1 className={styles.title}>Paul Raguet </h1>
           <p className={styles.subTitle}>
-            Bientôt diplômé de&nbsp;
-            <a href="https://www.esilv.fr/" target="_blank" rel="noopener noreferrer">
-              l’ESILV
-            </a>
-            , promotion 2025, je recherche dès octobre un poste
-            d’ingénieur orienté développement et intégration de solutions technologiques. Mes
-            domaines de prédilection sont l’intelligence artificielle, la robotique et l’électronique.
+            Ingénieur diplômé orienté <strong>IA appliquée aux systèmes industriels</strong> (ESILV — Creative Technology). Expérience significative chez Airbus : IA générative locale, intégration Linux, réseaux industriels &amp; systèmes embarqués. Profil technique &amp; polyvalent, appétence pour la R&amp;D et le prototypage rapide.
           </p>
         </section>
 
         {/* Formation */}
         <section className={styles.section}>
           <h2 className={styles.heading}>Formation</h2>
-          <p><strong className={styles.miniTitle} >2020–2025 – Pôle Léonard de Vinci, Ecole d’ingénieur ESILV</strong>, en majeure créative technologie</p>
+          <p><strong className={styles.miniTitle} >2020–2025 – Pôle Léonard de Vinci, Ecole d'ingénieur ESILV</strong>, en majeure créative technologie</p>
           <p><strong className={styles.miniTitle} >2022 – 6 mois – Échange Erasmus RTU</strong> (Riga Technologic Université) Lettonie</p>
         </section>
 
@@ -80,7 +73,7 @@ export default function Home() {
         <section className={styles.section}>
           <h2 className={styles.heading}>Projets</h2>
           <div className={styles.project}>
-            <h3 className={styles.miniTitle}>Projet de troisième année à l’ESILV :</h3>
+            <h3 className={styles.miniTitle}>Projet de troisième année à l'ESILV :</h3>
             <p>
               Conception d'une imprimante 3D à argile sableuse (3 m3), avec câblage refait, isolation des composants et mise à jour du firmware. 
               Configuration des moteurs.
@@ -116,9 +109,9 @@ export default function Home() {
           </div>
 
           <div className={styles.project}>
-            <h3 className={styles.miniTitle}><br/>Construction d’un PC pour l’IA</h3>
+            <h3 className={styles.miniTitle}><br/>Construction d'un PC pour l'IA</h3>
             <p>
-              Recherche et sélection des meilleurs composants pour le rapport performance/prix, puis montage d’un PC dédié à l’IA. Accès à distance via NoMachine.
+              Recherche et sélection des meilleurs composants pour le rapport performance/prix, puis montage d'un PC dédié à l'IA. Accès à distance via NoMachine.
             </p>
             <i>Compétences : hardware, optimisation, accès distant, veille technologique.</i>
           </div>
@@ -126,37 +119,81 @@ export default function Home() {
 
         <hr className={styles.divider} />
 
-                  {/* Parcours Professionnel */}
-          <section className={styles.section}>
-            <h2 className={styles.heading}>Parcours Professionnel</h2>
-            <p>
-              <strong className={styles.miniTitle}>2025 – Stage de fin d’études de 6 mois chez Alten (Direction Innovation)</strong><br />
-              - Développement d’un système multi-IA pour la maintenance prescriptive sur une mini-usine 4.0.<br />
-              - Conception des architectures IA (TensorFlow), traitement des données, entraînement et tests.<br />
-              - Démonstration fonctionnelle du système pour valider sa pertinence.<br />
-              - Encadrement d’une petite équipe : répartition des tâches et suivi technique.
-            </p>
-            <p>
-              <strong className={styles.miniTitle}><br/>2024 - Stage de 4 mois à la DSI (Direction des Systèmes d'Information) chez Afflelou</strong><br />
-              - Développement d'une application en Python pour rendre une machine CNC compatible avec le gcode.<br />
-              - Diagnostic et réparation d'une machine de découpe, incluant l'identification des pièces défectueuses et leur remplacement.
-            </p>
-            <p>
-              <strong className={styles.miniTitle}><br/>2023 – 3 mois - Travail dans la restauration, Lafayette Café et Hôtel Lutetia</strong>
-            </p>
-            <p>
-              <strong className={styles.miniTitle}><br/>2022 – 1 mois - Stagiaire à l’IFTH (Industrie Française du Textile et de l’Habillement)</strong><br />
-              - Expérimentation de l’impression 3D sur textile.<br />
-              - Rédaction d'une documentation pour la prise en main de l'imprimante 3D Ultimaker2 à destination des débutants.
-            </p>
-            <p>
-              <strong className={styles.miniTitle}><br/>2020–2023 - Intervenant au Pôle Léonard de Vinci pour la formation "Initiation aux FabLabs"</strong><br />
-              - Enseignement de la méthodologie de réalisation de projets FabLab à des étudiants en école de commerce.<br />
-              - Formation sur l'utilisation des outils de fabrication (imprimantes 3D, dremel, etc.).<br />
-              - Évaluation des projets réalisés par les étudiants et accompagnement dans leur développement.
-            </p>
-          </section>
+        {/* Parcours Professionnel — enrichi, trié par importance */}
+        <section className={styles.section}>
+          <h2 className={styles.heading}>Parcours Professionnel</h2>
 
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Consultant IA &amp; Intégration de Solution — ALTEN / Airbus</strong>
+            <p className={styles.expMeta}>Toulouse, France | Fin 2025 – Présent</p>
+            <p className={styles.expMission}>Conception, déploiement et maintenance de solutions d'IA pour la maintenance industrielle.</p>
+            <ul>
+              <li><strong>Architecture IA :</strong> Idéation, définition des besoins opérationnels et architecture technique, de la conception jusqu'au déploiement sur site.</li>
+              <li><strong>IA locale &amp; Edge AI :</strong> Évaluation et intégration de solutions open source — Ollama, llama.cpp, vLLM — sur plateformes NVIDIA Jetson Orin &amp; Thor.</li>
+              <li><strong>Données industrielles :</strong> Chaînes de collecte et de traitement temps réel (OPC UA, TCP/IP, logs machines, InfluxDB).</li>
+              <li><strong>RAG &amp; GraphRAG :</strong> Récupération de connaissances combinant documentation, données industrielles et graphes pour enrichir les réponses.</li>
+              <li><strong>NLP / assistance opérateur :</strong> Transformation des listes d'états et infos opérationnelles en synthèses exploitables.</li>
+              <li><strong>Confidentialité :</strong> Environnements Linux autonomes, données traitées/exploitables localement, sans accès Internet (contraintes industrielles).</li>
+              <li><strong>Déploiement &amp; maintenance :</strong> Installation, conteneurisation, maintenance (Docker, OpenWebUI, Memgraph) avec évolution continue.</li>
+              <li><strong>Optimisation :</strong> Temps de génération des synthèses réduit d'environ 1 min à une dizaine de secondes.</li>
+              <li><strong>Validation :</strong> Essais en site de production Airbus, notamment sur le Flextrack.</li>
+            </ul>
+            <p className={styles.expSub}><strong>Robotique industrielle &amp; Systèmes (4 mois)</strong> — Communication Profinet ↔ TCP/IP via IPC Siemens (Linux Debian) ; développement C++ (débogage, refactoring, ajout de fonctions) ; robot MSDR (projet MS1R, Airbus) ; POC fonctionnel validant l'intégration.</p>
+            <p className={styles.expTech}>Technologies : Linux, Docker, OpenWebUI, Ollama, llama.cpp, vLLM, Jetson Orin/Thor, SSH, Memgraph, C++, Profinet, TCP/IP, OPC UA, InfluxDB, RAG, GraphRAG.</p>
+          </div>
+
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Stage Ingénieur IA — ALTEN (Direction de l'Innovation)</strong>
+            <p className={styles.expMeta}>Toulouse, France | 2025 (6 mois)</p>
+            <ul>
+              <li><strong>Maintenance prescriptive :</strong> Système multi-IA pour anticiper les pannes industrielles.</li>
+              <li><strong>Data Engineering :</strong> Création bout-en-bout d'un dataset industriel propriétaire et traitement de signaux complexes.</li>
+              <li><strong>Deep Learning :</strong> Entraînement, expérimentation et évaluation de plus de 700 modèles (CNN, RNN).</li>
+              <li><strong>Optimisation Edge :</strong> Adaptation et compression des modèles pour le matériel embarqué.</li>
+              <li><strong>Gestion de projet :</strong> Encadrement technique d'une petite équipe et suivi Agile (Azure DevOps).</li>
+            </ul>
+            <p className={styles.expTech}>Technologies : Python, TensorFlow, CNN, RNN, traitement du signal, Azure DevOps.</p>
+          </div>
+
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Stage Développement Python &amp; Maintenance — Afflelou</strong>
+            <p className={styles.expMeta}>Nevers, France | 2024 (4 mois)</p>
+            <ul>
+              <li><strong>Développement :</strong> Application Python (Tkinter) de traduction temps réel vers le G-code.</li>
+              <li><strong>Déploiement multi-OS :</strong> Portage et intégration sur Linux et Windows.</li>
+              <li><strong>Souveraineté logicielle :</strong> Réduction de la dépendance de l'usine vis-à-vis des logiciels propriétaires tiers.</li>
+              <li><strong>Rénovation industrielle :</strong> Maintenance curative de machines de découpe de verre et upgrades (surface de découpe, module laser).</li>
+            </ul>
+            <p className={styles.expTech}>Technologies : Python, Tkinter, G-code, systèmes industriels.</p>
+          </div>
+
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Restauration — Lafayette Café &amp; Hôtel Lutetia</strong>
+            <p className={styles.expMeta}>Toulouse, France | 2023 (3 mois)</p>
+            <ul>
+              <li>Cuisine et service, gestion des stocks, amélioration des process internes.</li>
+            </ul>
+          </div>
+
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Stagiaire — IFTH (Industrie Française du Textile et de l'Habillement)</strong>
+            <p className={styles.expMeta}>Toulouse, France | 2022 (1 mois)</p>
+            <ul>
+              <li>Expérimentation de l'impression 3D sur textile.</li>
+              <li>Rédaction d'une documentation pour la prise en main d'une imprimante 3D (Ultimaker 2) à destination des débutants.</li>
+            </ul>
+          </div>
+
+          <div className={styles.experience}>
+            <strong className={styles.expTitle}>Intervenant — Pôle Léonard de Vinci, formation "Initiation aux FabLabs"</strong>
+            <p className={styles.expMeta}>2020 – 2023</p>
+            <ul>
+              <li>Enseignement de la méthodologie de réalisation de projets FabLab à des étudiants en école de commerce.</li>
+              <li>Formation à l'utilisation des outils de fabrication (imprimantes 3D, dremel, etc.).</li>
+              <li>Évaluation des projets réalisés et accompagnement dans leur développement.</li>
+            </ul>
+          </div>
+        </section>
 
         <hr className={styles.divider} />
 
@@ -166,7 +203,7 @@ export default function Home() {
           <p><strong className={styles.miniTitle}>Responsable événementiel (2023-2024)</strong> au De Vinci Fablab</p>
           <p><strong className={styles.miniTitle}>Responsable Projet (2021–2022)</strong> De Vinci Fablab organisation et suivi des projets<br/>
           Élu membre méritant du FabLab grâce à mon implication active.</p>
-          <p><strong className={styles.miniTitle}>Membre de l’association sportive AMMA </strong> (Association de Mixed Martial Arts)</p>
+          <p><strong className={styles.miniTitle}>Membre de l'association sportive AMMA </strong> (Association de Mixed Martial Arts)</p>
         </section>
       </div>
     </div>
