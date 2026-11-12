@@ -1,11 +1,13 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import useInView from "../useInView";
 import styles from "./ProjectBubble.module.css";
 
 export default function ProjectBubble({ title, summary, details, skills, links, images, videos }) {
   const [validMedia, setValidMedia] = useState([]);
   const [currentMediaIndex, setCurrentMediaIndex] = useState(0);
+  const [inView, ref] = useInView({ threshold: 0, rootMargin: "150px 0px" });
 
   useEffect(() => {
     const validateMedia = async () => {
@@ -30,7 +32,7 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
 
   useEffect(() => {
     if (validMedia.length > 0) {
-      const getRandomInterval = () => Math.random() * 3000 + 2000; // Random interval between 3 and 6 seconds
+      const getRandomInterval = () => Math.random() * 3000 + 2000; // Random interval
 
       const timeout = setTimeout(() => {
         setCurrentMediaIndex((prevIndex) =>
@@ -44,8 +46,9 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
 
   if (validMedia.length === 0) {
     return (
-      <div className={styles.projectBubble}>
+      <div className={styles.projectBubble} ref={ref}>
         <div className={styles.mediaContainer}>
+          <div className={styles.mediaPlaceholder} />
           <p className={styles.errorMessage}>Chargement des média, recharger la page sinon.</p>
         </div>
         <div className={styles.content}>
@@ -61,24 +64,28 @@ export default function ProjectBubble({ title, summary, details, skills, links, 
   }
 
   return (
-    <div className={styles.projectBubble}>
+    <div className={styles.projectBubble} ref={ref}>
       <div className={styles.mediaContainer}>
-        {validMedia[currentMediaIndex].includes(".mp4") ? (
-          <video
-            src={validMedia[currentMediaIndex]}
-            autoPlay
-            loop
-            muted
-            className={styles.projectMedia}
-          />
-        ) : (
-          <Image
-            src={validMedia[currentMediaIndex]}
-            alt={`Media ${currentMediaIndex + 1} for ${title}`}
-            width={500}
-            height={300}
-            className={styles.projectMedia}
-          />
+        <div className={styles.mediaPlaceholder} />
+        {inView && (
+          validMedia[currentMediaIndex].includes(".mp4") ? (
+            <video
+              src={validMedia[currentMediaIndex]}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className={styles.projectMedia}
+            />
+          ) : (
+            <Image
+              src={validMedia[currentMediaIndex]}
+              alt={`Media ${currentMediaIndex + 1} for ${title}`}
+              width={500}
+              height={300}
+              className={styles.projectMedia}
+            />
+          )
         )}
       </div>
       <div className={styles.content}>

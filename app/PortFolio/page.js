@@ -56,7 +56,7 @@ export default function PortFolio() {
               "Organisation de campagne de financement"
             ]}
             links={[]} // Tu pourras ajouter tes liens ici
-            images={["/images/kik.jpeg","/images/kik1.jpeg","/images/kik2.jpeg","/images/kik3.jpeg","/images/kik4.jpeg","/images/kik5.jpeg","/images/kik6.jpeg","/images/kik7.jpeg","/images/kik8.mp4","/images/kik9.jpeg","/images/kik10.jpeg","/images/kik11.jpeg","/images/kik12.mp4","/images/kik13.jpeg","/images/kik.jpeg14","/images/kik.jpeg15","/images/kik16.mp4","/images/kik17.jpeg","/images/kik18.jpeg","/images/kik19.jpeg","/images/kik20.jpeg"]} // Tu pourras ajouter tes images ici
+            images={["/images/kik.jpeg","/images/kik1.jpeg","/images/kik2.jpeg","/images/kik3.jpeg","/images/kik4.jpeg","/images/kik5.jpeg","/images/kik6.jpeg","/images/kik7.jpeg","/images/kik8.mp4","/images/kik9.jpeg","/images/kik10.jpeg","/images/kik11.jpeg","/images/kik12.mp4","/images/kik13.jpeg","/images/kik14.jpeg","/images/kik15.jpeg","/images/kik16.mp4","/images/kik17.jpeg","/images/kik18.jpeg","/images/kik19.jpeg","/images/kik20.jpeg"]} // Tu pourras ajouter tes images ici
           />
         
       </section>
@@ -87,7 +87,7 @@ export default function PortFolio() {
               "Prototypage"
             ]}
             links={[]} // Tu pourras ajouter tes liens ici
-            images={["/images/game.jpeg","/images/game1.jpeg","/images/game2.jpeg","/images/game3.jpeg","/images/game4.jpeg","/images/game5.jpeg",]} // Tu pourras ajouter tes images ici
+            images={["/images/game.jpeg","/images/game1.jpeg","/images/game2.jpeg","/images/game3.jpeg","/images/game4.jpeg","/images/game5.mp4",]} // Tu pourras ajouter tes images ici
           />
 
         <ProjectBubble

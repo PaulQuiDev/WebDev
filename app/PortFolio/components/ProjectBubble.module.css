@@ -17,6 +17,7 @@
   justify-content: center;
   overflow: hidden;
   height: 350px; /* Hauteur fixe pour le conteneur */
+  position: relative;
 }
 
 .projectMedia {
@@ -24,6 +25,32 @@
   width: auto; /* Maintient les proportions */
   object-fit: contain; /* Garantit que tout le média est visible sans rogner */
   border-radius: 6%;
+  position: relative;
+  z-index: 1;
+}
+
+/* Squelette animé affiché tant que la bulle n'est pas dans le viewport
+   (les médias ne sont chargés/affichés qu'à l'arrivée à l'écran). */
+.mediaPlaceholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #eceae6 25%, #f5f3ef 50%, #eceae6 75%);
+  background-size: 200% 100%;
+  animation: media-shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes media-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
+/* Message affiché si aucun média valide n'est trouvé. */
+.errorMessage {
+  position: relative;
+  z-index: 1;
+  color: #b00020;
+  font-weight: bold;
+  text-align: center;
 }
 
 .content {
