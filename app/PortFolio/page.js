@@ -12,6 +12,31 @@ export default function PortFolio() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Projets réalisés dans le cadre professionnel</h2>
 
+        {/* Expérience actuelle — IA Flextrack & Robotique MSDR (Altén / Airbus) */}
+        <ProjectBubble
+          title="Consultant IA &amp; Intégration — Altén / Airbus (Flextrack &amp; MSDR)"
+          summary="Mission actuelle (Fin 2025 – Présent) : IA générative locale pour la maintenance industrielle sur le Flextrack + sous-mission robotique sur le robot MSDR (projet MS1R)."
+          details="Expérience actuelle chez Airbus (via Altén). Sur le Flextrack — IA &amp; intégration : idéation, définition des besoins et architecture IA pour la maintenance industrielle ; conception et déploiement de solutions d'IA générative locale (Ollama, llama.cpp, vLLM) sur plateformes NVIDIA Jetson (Orin, Thor) dans des environnements Linux autonomes sans accès Internet (données traitées/exploitables localement, confidentialité). RAG &amp; GraphRAG combinant données industrielles, documentation et graphes pour récupérer des connaissances ; NLP transformant les listes d'états et informations opérationnelles en synthèses exploitables. Collecte et traitement temps réel (OPC UA, TCP/IP, logs machines, InfluxDB) ; optimisation du temps de génération des synthèses (1 min → ~10 s) ; déploiement et maintenance (OpenWebUI, Memgraph) ; essais en site de production Airbus. Sur le MSDR — Robotique : développement et intégration d'un POC fonctionnel dans le cadre du projet MS1R ; communication Profinet ↔ TCP/IP via IPC Siemens sur Linux Debian ; développement C++ (débogage, refactoring, ajout de fonctions) ; développement et intégration du robot MSDR."
+          skills={[
+            "IA appliquée à l'industrie",
+            "IA générative locale (Ollama, llama.cpp, vLLM)",
+            "NVIDIA Jetson (Orin, Thor)",
+            "RAG &amp; GraphRAG",
+            "NLP / traitement du langage",
+            "Linux (Debian)",
+            "OPC UA, TCP/IP, InfluxDB",
+            "Robotique industrielle (MSDR, MS1R)",
+            "Développement C++",
+            "Profinet ↔ TCP/IP (IPC Siemens)",
+            "OpenWebUI, Memgraph",
+            "Maintenance industrielle"
+          ]}
+          links={[
+            { label: "Airbus — Robotics / Industry 4.0", url: "https://www.airbus.com/en/innovation/digital-transformation/industry-4-0/robotics" },
+          ]}
+          images={["/images/AR1.jpeg", "/images/AR2.jpeg", "/images/AR3.jpeg"]}
+        />
+
         <ProjectBubble
           title="Système multi-IA pour maintenance 4.0"
           summary="Stage de fin d’études de 6 mois au sein de la Direction Innovation chez Alten, axé sur le développement d’un système multi-IA pour la maintenance prescriptive dans une mini-usine 4.0."
