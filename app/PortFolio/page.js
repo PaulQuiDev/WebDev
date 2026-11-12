@@ -171,6 +171,23 @@ export default function PortFolio() {
           images={["/images/print.jpeg" ,"/images/print1.jpeg" ,"/images/print2.jpeg" ,"/images/print3.jpeg" ,"/images/print4.jpeg" ,"/images/print5.jpeg" ]} // Tu pourras ajouter tes images ici
         />
 
+        {/* RPG IA — projet personnel (loisirs) */}
+        <ProjectBubble
+          title="RPG IA — prototype de jeu de rôle 2D aux assets générés par IA"
+          summary="Prototype de jeu de rôle 2D (Python + Pygame) où « AI » désigne la génération des assets par image IA, et non une logique de jeu par IA. Double utilité : s'amuser avec le jeu, ET expérimenter les nouvelles fonctionnalités des IA de génération et de modification d'images pour les pousser et découvrir leurs limites. 100 % local, y compris toutes les générations."
+          details="Un prototype de jeu de rôle 2D en Python et Pygame : personnage animé, mouvement au clavier, collisions, changement de carte, objets interactifs et PNJ (statiques ou en patrouille). Le nom AI ne désigne pas une logique de jeu pilotée par une IA, mais bien la génération de tous les assets visuels par image IA (prompts dans prompte_actuelle.txt, sorties dans le dossier Nonranger/). C'est un projet à double utilité : d'une part s'amuser avec un jeu complet, et d'autre part exploiter et expérimenter les nouvelles fonctionnalités des IA de génération et de modification d'images, pour les pousser au travail et découvrir leurs limites. Le moteur du jeu est data-driven (JSON + logic.py) : monstre à pathfinding A* avec détection de blocage, PNJ qui fuient, quête de boss avec transformation, et un éditeur de cartes en GUI (map_editor.py) pour superposer fond et masque, peindre la segmentation, définir les objets interactifs et exporter. Tout le projet est en local, ainsi que toutes les générations d'images. Modèles ComfyUI : Qwen image 2.1 et Krea 2. Agent d'assistance : Hermes Agent sur Bonzai 27B, basé sur Qwen 3.8 27B."
+          skills={[
+            "Jeux 2D (Python, Pygame)",
+            "Génération et modification d'images par IA (ComfyUI)",
+            "Modèles image : Qwen image 2.1 et Krea 2",
+            "Agent LLM (Hermes Agent / Bonzai 27B, base Qwen 3.8 27B)",
+            "Pathfinding A* et moteur data-driven (JSON)",
+            "Éditeur de cartes en GUI (segmentation, masque, objets, export)",
+            "100 % local : jeu et générations en local"
+          ]}
+          links={[]} // Lien GitHub à ajouter si hébergé
+          images={["/images/RPG.jpeg", "/images/RPG1.jpeg", "/images/RPG2.jpeg", "/images/RPG3.jpeg", "/images/RPG4.png", "/images/RPG5.png", "/images/RPG6.png", "/images/RPG7.png"]}
+        />
 
       </section>
     </div>
