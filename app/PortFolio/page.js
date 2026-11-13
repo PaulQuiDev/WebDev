@@ -12,11 +12,11 @@ export default function PortFolio() {
       <section className={styles.section}>
         <h2 className={styles.sectionTitle}>Projets réalisés dans le cadre professionnel</h2>
 
-        {/* Expérience actuelle — IA Flextrack & Robotique MSDR (Altén / Airbus) */}
+        {/* Expérience actuelle — IA Flextrack & Robotique MSDR (Alten / Airbus) */}
         <ProjectBubble
-          title="Consultant IA &amp; Intégration — Altén / Airbus (Flextrack &amp; MSDR)"
-          summary="Mission actuelle (Fin 2025 – Présent) : IA générative locale pour la maintenance industrielle sur le Flextrack + sous-mission robotique sur le robot MSDR (projet MS1R)."
-          details="Expérience actuelle chez Airbus via Altén. Sur le Flextrack, mon rôle mêle IA et intégration : idéation, définition des besoins et architecture technique des solutions de maintenance industrielle. Je conçois et déploie des solutions d'IA générative locale (Ollama, llama.cpp, vLLM) sur des plateformes NVIDIA Jetson (Orin, Thor). Elles s'exécutent dans des environnements Linux autonomes, sans accès Internet, afin de traiter et exploiter les données localement et préserver leur confidentialité. J'intègre du RAG et du GraphRAG (données industrielles, documentation, graphes) pour récupérer des connaissances fiables. J'utilise du NLP pour transformer les listes d'états et informations opérationnelles en synthèses exploitables. Je collecte et traite les données en temps réel (OPC UA, TCP/IP, logs machines, InfluxDB). J'optimise la génération des synthèses, d'environ une minute à dix secondes. Je déploie et maintiens les services (OpenWebUI, Memgraph). Des essais se sont réalisés sur un site de production Airbus. Côté robotique, dans le cadre du projet MS1R, je développe et intègre un POC fonctionnel sur le robot MSDR. J'implémente la communication Profinet ↔ TCP/IP via un IPC Siemens sous Linux Debian. Je développe le C++ (débogage, refactoring, ajout de fonctions) pour l'intégration du robot MSDR."
+          title="Consultant IA &amp; Intégration — Alten / Airbus (Flextrack &amp; MSDR)"
+          summary="Mission actuelle (Fin 2025 – Présent) : IA générative locale pour la maintenance industrielle sur le Flextrack + sous-mission robotique sur le robot MSDR."
+          details="Expérience actuelle chez Airbus via Alten. Sur le Flextrack, mon rôle mêle IA et intégration : idéation, définition des besoins et architecture technique des solutions de maintenance industrielle. Je conçois et déploie des solutions d'IA générative locale (Ollama, llama.cpp, vLLM) sur des plateformes NVIDIA Jetson (Orin, Thor). Elles s'exécutent dans des environnements Linux autonomes, sans accès Internet, afin de traiter et exploiter les données localement et préserver leur confidentialité. J'intègre du RAG et du GraphRAG (données industrielles, documentation, graphes) pour récupérer des connaissances fiables. J'utilise du NLP pour transformer les listes d'états et informations opérationnelles en synthèses exploitables. Je collecte et traite les données en temps réel (OPC UA, TCP/IP, logs machines, InfluxDB). J'optimise la génération des synthèses, d'environ une minute à dix secondes. Je déploie et maintiens les services (OpenWebUI, Memgraph). Des essais se sont réalisés sur un site de production Airbus. Côté robotique, je développe et intègre un POC fonctionnel sur le robot MSDR. J'implémente la communication Profinet ↔ TCP/IP via un IPC Siemens sous Linux Debian. Je développe le C++ (débogage, refactoring, ajout de fonctions) pour l'intégration du robot MSDR."
           skills={[
             "IA appliquée à l'industrie",
             "IA générative locale (Ollama, llama.cpp, vLLM)",
@@ -25,7 +25,7 @@ export default function PortFolio() {
             "NLP / traitement du langage",
             "Linux (Debian)",
             "OPC UA, TCP/IP, InfluxDB",
-            "Robotique industrielle (robot MSDR, projet MS1R)",
+            "Robotique industrielle (robot MSDR)",
             "Développement C++",
             "Profinet ↔ TCP/IP (IPC Siemens)",
             "OpenWebUI, Memgraph",
@@ -39,7 +39,7 @@ export default function PortFolio() {
 
         <ProjectBubble
           title="Système multi-IA pour maintenance 4.0"
-          summary="Stage de fin d’études de 6 mois au sein de la Direction Innovation chez Altén, axé sur le développement d’un système multi-IA pour la maintenance prescriptive dans une mini-usine 4.0."
+          summary="Stage de fin d’études de 6 mois au sein de la Direction Innovation chez Alten, axé sur le développement d’un système multi-IA pour la maintenance prescriptive dans une mini-usine 4.0."
           details="J’ai participé à la création d’un système multi-IA capable de prédire les pannes dans un environnement industriel simulé. Après une phase d’étude rapide pour identifier les modèles les plus adaptés, j’ai conçu des architectures IA sous TensorFlow, traité les signaux et les données, puis entraîné et validé les modèles. J’ai également encadré une petite équipe, en assurant la répartition des tâches et le suivi via Azure DevOps, dans un cadre agile."
           skills={[
             "IA appliquée à l'industrie",
