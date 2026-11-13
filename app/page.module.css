@@ -159,6 +159,27 @@
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
+/* ===== Projets (liste compacte) ===== */
+.projList {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+.projList li {
+  font-size: 0.95rem;
+  color: #230C0F;
+  line-height: 1.5;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  position: relative;
+}
+.projList li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #AF5D63;
+}
+
 /* Media queries */
 @media (max-width: 1024px) {
   .sidebar {

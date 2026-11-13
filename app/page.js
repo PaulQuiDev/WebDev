@@ -69,52 +69,19 @@ export default function Home() {
 
         <hr className={styles.divider} />
 
-        {/* Projets */}
+        {/* Projets — liste compacte, projets professionnels d'abord */}
         <section className={styles.section}>
           <h2 className={styles.heading}>Projets</h2>
-          <div className={styles.project}>
-            <h3 className={styles.miniTitle}>Projet de troisième année à l'ESILV :</h3>
-            <p>
-              Conception d'une imprimante 3D à argile sableuse (3 m3), avec câblage refait, isolation des composants et mise à jour du firmware. 
-              Configuration des moteurs.
-            </p>
-            <i>Compétences : travail d'équipe, configuration de moteurs, gestion de projets.</i>
-          </div>
-
-          <div className={styles.project}>
-            <h3 className={styles.miniTitle}><br/>Optimisation d'une imprimante 3D FDM</h3>
-            <p>
-              Remplacement de la carte mère, intégration d'une Raspberry Pi pour un pilotage à distance via SSH sous Linux. 
-              Amélioration de la tête d'impression et du plateau.
-            </p>
-            <i>Compétences : Linux, SSH, optimisation matérielle.</i>
-          </div>
-
-          <div className={styles.project}>
-            <h3 className={styles.miniTitle} ><br/>Conception de circuits</h3>
-            <p>
-              Création d'un PCB pour ESP32 avec KiCad, soudure SMD et anodisation du cuivre. 
-              Étude sur l'anodisation pour réduire les coûts des circuits interactifs.
-            </p>
-            <i>Compétences : KiCad, soudure SMD, anodisation, recherche.</i>
-          </div>
-
-          <div className={styles.project}>
-            <h3 className={styles.miniTitle}><br/>Utilisation locale de modèles IA</h3>
-            <p>
-              Déploiement de modèles LLM (Mistral, LLaMA) et diffusion d'images (Stable Diffusion, Flux) via Docker. 
-              Programmation en Python, modification des API et debug.
-            </p>
-            <i>Compétences : Docker, Python, API, debug et optimisation.</i>
-          </div>
-
-          <div className={styles.project}>
-            <h3 className={styles.miniTitle}><br/>Construction d'un PC pour l'IA</h3>
-            <p>
-              Recherche et sélection des meilleurs composants pour le rapport performance/prix, puis montage d'un PC dédié à l'IA. Accès à distance via NoMachine.
-            </p>
-            <i>Compétences : hardware, optimisation, accès distant, veille technologique.</i>
-          </div>
+          <ul className={styles.projList}>
+            <li><strong>IA générative locale — Flextrack (Airbus, fin 2025–présent)</strong> : solutions IA (Ollama, llama.cpp, vLLM) sur Jetson Orin/Thor pour la maintenance industrielle ; synthèse des états 1 min → ~10 s ; Linux autonome sans Internet.</li>
+            <li><strong>Robotique — MSDR / MS1R (Airbus, fin 2025)</strong> : POC fonctionnel de communication Profinet ↔ TCP/IP (IPC Siemens, Linux) ; développement C++ du robot.</li>
+            <li><strong>Traduction temps réel vers le G-code — Afflelou (2024)</strong> : application Python/Tkinter multi-OS (Linux/Windows) ; maintenance curative de machines de découpe de verre.</li>
+            <li><strong>IA locales (Docker)</strong> : déploiement de LLM (Mistral, LLaMA) et de diffusion d'images (Stable Diffusion, Flux), API et debug en Python.</li>
+            <li><strong>Imprimante 3D à argile sableuse — ESILV (3ᵉ année)</strong> : refonte du câblage, isolation des composants, mise à jour du firmware, configuration des moteurs.</li>
+            <li><strong>Optimisation d'une imprimante 3D FDM</strong> : remplacement de la carte mère, pilotage à distance via Raspberry Pi/SSH sous Linux, amélioration de la tête et du plateau.</li>
+            <li><strong>PCB ESP32 (KiCad)</strong> : conception, soudure SMD et étude de l'anodisation du cuivre pour réduire les coûts des circuits interactifs.</li>
+            <li><strong>PC dédié IA</strong> : sélection et montage de hardware optimisé (rapport performance/prix), accès distant via NoMachine.</li>
+          </ul>
         </section>
 
         <hr className={styles.divider} />
