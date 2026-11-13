@@ -56,7 +56,7 @@ export default function Home() {
         <section className={styles.section}>
           <h1 className={styles.title}>Paul Raguet </h1>
           <p className={styles.subTitle}>
-            Ingénieur diplômé orienté <strong>IA appliquée aux systèmes industriels</strong> (ESILV — Creative Technology). Expérience significative chez Airbus : IA générative locale, intégration Linux, réseaux industriels &amp; systèmes embarqués. Profil technique &amp; polyvalent, appétence pour la R&amp;D et le prototypage rapide.
+            Ingénieur diplômé orienté <strong>IA appliquée aux systèmes industriels</strong> (<a href="https://www.esilv.fr/" target="_blank" rel="noopener noreferrer">ESILV</a> — Creative Technology). Expérience significative chez Airbus : IA générative locale, intégration Linux, réseaux industriels &amp; systèmes embarqués. Profil technique &amp; polyvalent, appétence pour la R&amp;D et le prototypage rapide.
           </p>
         </section>
 
