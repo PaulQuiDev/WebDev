@@ -151,7 +151,8 @@ export default function PortFolio() {
             "100 % local : jeu et générations en local"
           ]}
           links={[
-            { label: "GitHub — RPG IA", url: "https://github.com/PaulQuiDev/RPG_Ai" }
+            { label: "GitHub — RPG IA", url: "https://github.com/PaulQuiDev/RPG_Ai" },
+            { label: "Jouer — RPG IA (web)", url: "https://paulquidev.github.io/RPG_Ai/" }
           ]}
           images={["/images/RPG.jpeg", "/images/RPG1.jpeg", "/images/RPG2.jpeg", "/images/RPG3.jpeg", "/images/RPG4.png", "/images/RPG5.png", "/images/RPG6.png", "/images/RPG7.png"]}
         />
