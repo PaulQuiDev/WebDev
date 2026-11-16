@@ -43,12 +43,11 @@ export default function Home() {
           
           <h2>SKILLS</h2>
           <ul>  
-            <li><strong>IA :</strong> TensorFlow, CNN/RNN, LLM open-source, IA générative locale, traitement du signal</li>
-            <li><strong>Programmation :</strong> Python, C++, C#</li>
-            <li><strong>Systèmes :</strong> Linux (Debian), Docker, Profinet, TCP/IP, SSH</li>
-            <li><strong>Industrie :</strong> OPC UA, InfluxDB, maintenance industrielle</li>
-            <li><strong>Hardware :</strong> PCB (ESP32, KiCad), IoT (ESP-NOW), Impression 3D</li>
-            <li><strong>Outils :</strong> Git, Azure DevOps</li>
+            <li><strong>IA &amp; Data :</strong> Modèles profonds et LLM locaux pour diagnostiquer et synthétiser les données de maintenance industrielle</li>
+            <li><strong>Programmation :</strong> Python, C++, C# — applications web, embarquées et industrielles</li>
+            <li><strong>Systèmes &amp; Réseaux :</strong> Linux, conteneurs, réseaux industriels et systèmes embarqués</li>
+            <li><strong>Hardware &amp; IoT :</strong> Conception PCB, objets connectés et impression 3D</li>
+            <li><strong>Méthodes :</strong> Git, CI/CD (Azure DevOps)</li>
           </ul>
         </div>
         <div className={styles.mainContent}>
@@ -91,7 +90,7 @@ export default function Home() {
           <h2 className={styles.heading}>Parcours Professionnel</h2>
 
           <div className={styles.experience}>
-            <strong className={styles.expTitle}>Consultant IA &amp; Intégration de Solution — ALTEN / Airbus</strong>
+            <strong className={styles.expTitle}>Intégration d'IA sur une ligne de production Airbus (via ALTEN)</strong>
             <p className={styles.expMeta}>Toulouse, France | Fin 2025 – Présent</p>
             <p className={styles.expMission}>Conception, déploiement et maintenance de solutions d'IA pour la maintenance industrielle.</p>
             <ul>
@@ -106,7 +105,6 @@ export default function Home() {
               <li><strong>Validation :</strong> Essais en site de production Airbus, notamment sur le Flextrack.</li>
             </ul>
             <p className={styles.expSub}><strong>Robotique industrielle &amp; Systèmes (4 mois)</strong> — Communication Profinet ↔ TCP/IP via IPC Siemens (Linux Debian) ; développement C++ (débogage, refactoring, ajout de fonctions) ; robot MSDR (projet MS1R, Airbus) ; POC fonctionnel validant l'intégration.</p>
-            <p className={styles.expTech}>Technologies : Linux, Docker, OpenWebUI, Ollama, llama.cpp, vLLM, Jetson Orin/Thor, SSH, Memgraph, C++, Profinet, TCP/IP, OPC UA, InfluxDB, RAG, GraphRAG.</p>
           </div>
 
           <div className={styles.experience}>
@@ -119,7 +117,6 @@ export default function Home() {
               <li><strong>Optimisation Edge :</strong> Adaptation et compression des modèles pour le matériel embarqué.</li>
               <li><strong>Gestion de projet :</strong> Encadrement technique d'une petite équipe et suivi Agile (Azure DevOps).</li>
             </ul>
-            <p className={styles.expTech}>Technologies : Python, TensorFlow, CNN, RNN, traitement du signal, Azure DevOps.</p>
           </div>
 
           <div className={styles.experience}>
@@ -131,7 +128,6 @@ export default function Home() {
               <li><strong>Souveraineté logicielle :</strong> Réduction de la dépendance de l'usine vis-à-vis des logiciels propriétaires tiers.</li>
               <li><strong>Rénovation industrielle :</strong> Maintenance curative de machines de découpe de verre et upgrades (surface de découpe, module laser).</li>
             </ul>
-            <p className={styles.expTech}>Technologies : Python, Tkinter, G-code, systèmes industriels.</p>
           </div>
 
           <div className={styles.experience}>

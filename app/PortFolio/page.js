@@ -14,7 +14,7 @@ export default function PortFolio() {
 
         {/* Expérience actuelle — IA Flextrack & Robotique MSDR (Alten / Airbus) */}
         <ProjectBubble
-          title="Consultant IA &amp; Intégration — Alten / Airbus (Flextrack &amp; MSDR)"
+          title="Intégration d'IA sur ligne de production Airbus — Flextrack &amp; MSDR (via Alten)"
           summary="Mission actuelle (Fin 2025 – Présent) : IA générative locale pour la maintenance industrielle sur le Flextrack + sous-mission robotique sur le robot MSDR."
           details="Expérience actuelle chez Airbus via Alten. Sur le Flextrack, mon rôle mêle IA et intégration : idéation, définition des besoins et architecture technique des solutions de maintenance industrielle. Je conçois et déploie des solutions d'IA générative locale (Ollama, llama.cpp, vLLM) sur des plateformes NVIDIA Jetson (Orin, Thor). Elles s'exécutent dans des environnements Linux autonomes, sans accès Internet, afin de traiter et exploiter les données localement et préserver leur confidentialité. J'intègre du RAG et du GraphRAG (données industrielles, documentation, graphes) pour récupérer des connaissances fiables. J'utilise du NLP pour transformer les listes d'états et informations opérationnelles en synthèses exploitables. Je collecte et traite les données en temps réel (OPC UA, TCP/IP, logs machines, InfluxDB). J'optimise la génération des synthèses, d'environ une minute à dix secondes. Je déploie et maintiens les services (OpenWebUI, Memgraph). Des essais se sont réalisés sur un site de production Airbus. Côté robotique, je développe et intègre un POC fonctionnel sur le robot MSDR. J'implémente la communication Profinet ↔ TCP/IP via un IPC Siemens sous Linux Debian. Je développe le C++ (débogage, refactoring, ajout de fonctions) pour l'intégration du robot MSDR."
           skills={[
@@ -140,14 +140,11 @@ export default function PortFolio() {
         <ProjectBubble
           title="RPG IA — prototype de jeu de rôle 2D aux assets générés par IA"
           summary="Prototype de jeu de rôle 2D (Python + Pygame) où « AI » désigne la génération des assets par image IA, et non une logique de jeu par IA. Double utilité : s'amuser avec le jeu, ET expérimenter les nouvelles fonctionnalités des IA de génération et de modification d'images pour les pousser et découvrir leurs limites. 100 % local, y compris toutes les générations."
-          details="Un prototype de jeu de rôle 2D en Python et Pygame : personnage animé, mouvement au clavier, collisions, changement de carte, objets interactifs et PNJ (statiques ou en patrouille). Le nom AI ne désigne pas une logique de jeu pilotée par une IA, mais bien la génération de tous les assets visuels par image IA. C'est un projet à double utilité : d'une part s'amuser avec un jeu complet, et d'autre part exploiter et expérimenter les nouvelles fonctionnalités des IA de génération et de modification d'images, pour les pousser au travail et découvrir leurs limites. Le moteur du jeu est data-driven (JSON + logic.py) : monstre à pathfinding A* avec détection de blocage, PNJ qui fuient, quête de boss avec transformation, et un éditeur de cartes en GUI (map_editor.py) pour superposer fond et masque, peindre la segmentation, définir les objets interactifs et exporter. Tout le projet est en local, ainsi que toutes les générations d'images. Modèles ComfyUI : Qwen image 2.1 et Krea 2. Agent d'assistance : Hermes Agent sur Bonzai 27B, basé sur Qwen 3.8 27B."
+          details="Un prototype de jeu de rôle 2D en Python et Pygame : personnage animé, mouvement au clavier, collisions, changement de carte, objets interactifs et PNJ (patrouille, esquive, quête de boss). Le « IA » du nom ne désigne pas un jeu piloté par une IA, mais la génération de tous les assets visuels par image IA. C'est un projet à double utilité : s'amuser avec un jeu complet, ET pousser au travail les IA de génération et de modification d'images pour découvrir leurs limites, le tout assisté par mon agent. Le moteur est optionnellement data-driven (JSON + logic.py), avec un éditeur de cartes en GUI (map_editor.py) : superposer fond et masque, peindre la segmentation, définir les objets interactifs et exporter. 100 % local, y compris toutes les générations d'images."
           skills={[
             "Jeux 2D (Python, Pygame)",
-            "Génération et modification d'images par IA (ComfyUI)",
-            "Modèles image : Qwen image 2.1 et Krea 2",
-            "Agent LLM (Hermes Agent / Bonzai 27B, base Qwen 3.8 27B)",
-            "Pathfinding A* et moteur data-driven (JSON)",
-            "Éditeur de cartes en GUI (segmentation, masque, objets, export)",
+            "Génération et modification d'images par IA",
+            "Agent LLM en assistance à la construction du projet",
             "100 % local : jeu et générations en local"
           ]}
           links={[
@@ -160,7 +157,7 @@ export default function PortFolio() {
         <ProjectBubble
           title="Expérimentations d'IA générative en local"
           summary="Installation et utilisation de modèles d'IA générative open source pour le texte, les images et les vidéos"
-          details="Dans ce projet, j’ai exploré des modèles d’IA générative exécutés en local, notamment pour la création d’images et de vidéos à l’aide de solutions comme A1111, ComfyUI et FramePack. Une veille active sur les modèles open source m’a permis d’identifier les outils les plus pertinents. J’ai configuré et optimisé leurs paramètres de génération, modifié les requêtes API pour des options par défaut personnalisées, et expérimenté l’exécution locale de LLM. Pour exploiter ces technologies de manière fluide, j’ai assemblé un PC sur mesure orienté IA."
+          details="Dans ce projet, j’ai exploré des modèles d’IA générative exécutés en local (texte, images et vidéos) à l’aide de plateformes open source de génération et d'édition. Une veille active sur les modèles open source m'a permis d'identifier les outils les plus pertinents. J'ai configuré et optimisé leurs paramètres de génération, ajusté les requêtes API pour des options par défaut personnalisées, et expérimenté l’exécution locale de LLM. Pour exploiter ces technologies de manière fluide, j’ai assemblé un PC sur mesure orienté IA."
           skills={[
             "Installation de modèles IA en local",
             "Veille open source",
